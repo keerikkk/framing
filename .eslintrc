@@ -1,0 +1,54 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "eslint:recommended",
+	"airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+	"plugin:prettier/recommended",
+
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.{js,mjs,cjs,ts,jsx,tsx}"],
+      "globals": {
+        "window": "readonly",
+        "document": "readonly",
+        "navigator": "readonly"
+      }
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "import/no-unresolved" : "error",
+    "react-hooks/rules-of-hooks": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "import/prefer-default-export": "off",
+    "react/function-component-definition": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-unused-expressions": "off",
+    "max-len": "off",
+	"prettier/prettier": [
+      "warn",
+      {},
+      {
+        "endOfLine": "auto",
+        "singleQuote": true,
+        "parser": "flow"
+      }
+    ],
+  }
+}
