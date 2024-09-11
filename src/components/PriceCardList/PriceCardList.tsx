@@ -17,7 +17,7 @@ export const PriceCardList = () => {
           />
         ))}
       </div>
-      <div className='flex justify-center mt-8 space-x-2'>
+      <div className='flex justify-center mt-12 space-x-2 max-md:hidden'>
         {priceCardsTitles.map((title) => (
           <button
             key={title}
