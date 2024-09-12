@@ -24,7 +24,7 @@ export function PriceCard({
       onClick={onClick}
     >
       <div
-        className={`flex flex-col px-8 py-4 bg-gray-950 bg-opacity-15 max-md:bg-opacity-50 shadow-xl justify-between
+        className={`flex flex-col px-8 py-4 bg-gray-950 bg-opacity-15 max-md:bg-opacity-50 justify-between
       ${isSelected ? 'md:border-[.375rem] md:border-cyan-950 md:border-opacity-50 md:shadow-cyan-950 md:shadow-md' : ''}`}
       >
         <PriceCardHeading title={title} {...price} />
