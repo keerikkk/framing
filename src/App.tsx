@@ -1,9 +1,11 @@
 import './App.css';
-import PriceListPage from './pages/PricelistPage';
+import BenefitsPage from './pages/BenefitsPage/BenefitsPage';
+import PriceListPage from './pages/PriceListPage';
 
 function App() {
   return (
     <div>
+      <BenefitsPage />
       <PriceListPage />
     </div>
   );
