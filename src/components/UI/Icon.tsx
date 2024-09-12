@@ -8,7 +8,7 @@ interface IconProps {
 
 const Icon = ({ name, className }: IconProps) => {
   return (
-    <svg className={cn('text-slate-400 h-7 w-7', className)}>
+    <svg className={cn('text-basic h-7 w-7', className)}>
       <use href={`${sprite}#${name}`} />
     </svg>
   );
