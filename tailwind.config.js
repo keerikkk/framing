@@ -17,6 +17,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        teal: {
+          light: "#233942",
+          dark: "#141F24",
+        },
         benefits: "#0D0F11",
         basic: "#898D92",
         background: "hsl(var(--background))",
