@@ -18,6 +18,7 @@ export default {
       },
       colors: {
         teal: {
+          bright: "#508195",
           light: "#233942",
           dark: "#141F24",
         },
