@@ -17,7 +17,7 @@ export function Navbar() {
         <div className='container mx-auto flex items-center justify-between px-4 md:px-24 lg:px-32 py-2'>
           <Link
             to='/'
-            className='font-bold text-2xl text-gray-200 tracking-widest'
+            className='font-bold text-2xl text-gray-300 tracking-widest'
           >
             {data.title}
           </Link>
