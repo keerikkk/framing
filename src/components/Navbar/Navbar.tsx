@@ -13,11 +13,11 @@ export function Navbar() {
 
   return (
     <>
-      <header className='fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-[#0F0F0F] bg-opacity-15 backdrop-blur-sm'>
+      <header className='fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-[#0F0F0F] bg-opacity-25 backdrop-blur-sm'>
         <div className='container mx-auto flex items-center justify-between md:justify-around px-4 py-2'>
           <Link
             to='/'
-            className='font-bold text-2xl text-gray-200 tracking-widest'
+            className='font-bold text-2xl text-gray-300 tracking-widest'
           >
             {data.title}
           </Link>
