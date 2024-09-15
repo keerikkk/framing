@@ -5,7 +5,7 @@ import Icon from './UI/Icon';
 const Footer = () => {
   return (
     <footer className='flex flex-col'>
-      <div className='container mx-auto flex items-center justify-between md:justify-around pt-6'>
+      <div className='container mx-auto flex items-center justify-between px-4 md:px-24 lg:px-32 pt-6'>
         <Link
           to='/'
           className='font-bold text-2xl text-gray-300 tracking-widest'
@@ -13,7 +13,7 @@ const Footer = () => {
           {data.title}
         </Link>
 
-        <div className='flex gap-12'>
+        <div className='flex gap-6 md:gap-12'>
           {socialData.map((icon) => (
             <Icon {...icon} className='text-white' />
           ))}
