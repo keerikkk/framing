@@ -1,7 +1,7 @@
-import HomeSocial from '@/components/HomeSocial';
-import HomeHeader from '@/components/HomeHeader';
+import HomeSocial from '@/components/Home/HomeSocial';
+import HomeHeader from '@/components/Home/HomeHeader';
 import { Button } from '@/components/UI/button';
-import HomeDescription from '@/components/HomeDescription';
+import HomeDescription from '@/components/Home/HomeDescription';
 
 const HomePage = () => {
   return (
