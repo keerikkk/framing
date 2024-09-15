@@ -14,7 +14,7 @@ export function Navbar() {
   return (
     <>
       <header className='fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-[#0F0F0F] bg-opacity-15 backdrop-blur-sm'>
-        <div className='container mx-auto flex items-center justify-between md:justify-around px-4 py-2'>
+        <div className='container mx-auto flex items-center justify-between px-4 md:px-24 lg:px-32 py-2'>
           <Link
             to='/'
             className='font-bold text-2xl text-gray-200 tracking-widest'
@@ -22,7 +22,10 @@ export function Navbar() {
             {data.title}
           </Link>
 
-          <NavbarLinkList className='hidden md:flex gap-8' links={data.links} />
+          <NavbarLinkList
+            className='hidden md:flex gap-4 lg:gap-8'
+            links={data.links}
+          />
 
           <button
             className='md:hidden bg-transparent border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white p-2 rounded-md'
