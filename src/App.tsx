@@ -1,5 +1,6 @@
 import './App.css';
 import { Navbar } from './components/Navbar/Navbar';
+import ScrollToTopButton from './components/UI/ScrollToTop';
 import AboutUsPage from './pages/AboutUsPage';
 import BenefitsPage from './pages/BenefitsPage/BenefitsPage';
 import ContactPage from './pages/ContactPage';
@@ -17,6 +18,7 @@ function App() {
       <TestimonialsPage />
       <PriceListPage />
       <ContactPage />
+      <ScrollToTopButton />
     </div>
   );
 }
