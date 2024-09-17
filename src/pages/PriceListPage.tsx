@@ -1,4 +1,4 @@
-import PriceCardList from '@/components/PriceCardList/PriceCardList';
+import { PriceCardList } from '@/components/PriceCardList/PriceCardList';
 import Header from '@/components/UI/Header';
 
 const data = {

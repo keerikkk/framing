@@ -7,7 +7,7 @@ import PriceCardFieldList from './PriceCardFieldList';
 
 interface PriceCardProps extends PriceCardItem {
   isSelected: boolean;
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export function PriceCard({
@@ -25,7 +25,7 @@ export function PriceCard({
     >
       <div
         className={`flex flex-col px-8 py-4 bg-gray-950 bg-opacity-15 max-md:bg-opacity-50 justify-between
-      ${isSelected ? 'md:border-[.375rem] md:border-cyan-950 md:border-opacity-50 md:shadow-cyan-950 md:shadow-md' : ''}`}
+      ${isSelected ? 'border-[.375rem] border-cyan-950 border-opacity-50 shadow-cyan-950 shadow-md' : ''}`}
       >
         <PriceCardHeading title={title} {...price} />
         <PriceCardFieldList fields={fields} />
