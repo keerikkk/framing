@@ -1,13 +1,28 @@
 import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 import { priceCards, priceCardsTitles } from '@/constants/PriceCards';
 import { PriceCard } from './PriceCard/PriceCard';
+import './priceCardList.css';
 
 export const PriceCardList = () => {
+  return (
+    <>
+      <PriceCardListDesktop />
+      <PriceCardListMobile />
+    </>
+  );
+};
+
+const PriceCardListDesktop = () => {
   const [selectedCard, setSelectedCard] = useState<string>('PREMIUM');
 
   return (
-    <div>
-      <div className='flex flex-col md:flex-row justify-center items-center md:items-stretch gap-6 mb-8'>
+    <div className='hidden md:block'>
+      <div className='flex justify-center items-stretch gap-6 mb-8'>
         {priceCards.map((priceCard) => (
           <PriceCard
             key={priceCard.title}
@@ -17,7 +32,7 @@ export const PriceCardList = () => {
           />
         ))}
       </div>
-      <div className='flex justify-center mt-12 space-x-2 max-md:hidden'>
+      <div className='flex justify-center mt-12 space-x-2'>
         {priceCardsTitles.map((title) => (
           <button
             key={title}
@@ -32,4 +47,16 @@ export const PriceCardList = () => {
   );
 };
 
-export default PriceCardList;
+const PriceCardListMobile = () => {
+  return (
+    <div className='md:hidden'>
+      <Swiper pagination={true} modules={[Pagination]}>
+        {priceCards.map((priceCard) => (
+          <SwiperSlide>
+            <PriceCard key={priceCard.title} {...priceCard} isSelected />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
