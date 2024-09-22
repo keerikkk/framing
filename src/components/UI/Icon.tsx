@@ -1,5 +1,4 @@
 import { cn } from '@/lib/utils';
-import sprite from '..//../../public/sprite.svg';
 
 interface IconProps {
   name: string;
@@ -9,14 +8,14 @@ interface IconProps {
 
 const Icon = ({ name, hoverName, className }: IconProps) => {
   return (
-    <div className={`relative inline-block ${hoverName ? 'group' : ''}`}>
+    <div className={`inline-block ${hoverName ? 'relative group' : ''}`}>
       <svg
         className={cn(
           `text-basic h-7 w-7 block transition-opacity duration-300 ${hoverName ? 'opacity-100 group-hover:opacity-0' : ''}`,
           className,
         )}
       >
-        <use href={`${sprite}#${name}`} />
+        <use href={`/sprite.svg#${name}`} />
       </svg>
       {hoverName && (
         <svg
@@ -25,7 +24,7 @@ const Icon = ({ name, hoverName, className }: IconProps) => {
             className,
           )}
         >
-          <use href={`${sprite}#${hoverName}`} />
+          <use href={`/sprite.svg#${hoverName}`} />
         </svg>
       )}
     </div>
