@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import { socialData } from './Home/HomeSocial';
 import Icon from './UI/Icon';
 
@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className='flex flex-col'>
       <div className='container mx-auto flex items-center justify-between px-4 md:px-24 lg:px-32 pt-6'>
         <Link
-          to='/'
+          href='/'
           className='font-bold text-2xl text-gray-300 tracking-widest'
         >
           {data.title}

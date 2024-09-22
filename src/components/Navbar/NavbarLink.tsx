@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import Link from 'next/link';
 
 export interface NavbarLinkProps {
   title: string;
@@ -8,13 +8,13 @@ export interface NavbarLinkProps {
 
 const NavbarLink = ({ title, to, onClick }: NavbarLinkProps) => {
   return (
-    <NavLink
-      to={to}
+    <Link
+      href={to}
       className='text-sm font-medium text-gray-300 hover:text-white transition-colors'
       onClick={onClick}
     >
       {title}
-    </NavLink>
+    </Link>
   );
 };
 

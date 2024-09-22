@@ -9,7 +9,7 @@ export default {
         cormorant: ["Cormorant", "serif"],
       },
       backgroundImage: {
-        pricelist: "url('/src/assets/pricelist.png')",
+        pricelist: "url('/assets/pricelist.png')",
       },
       borderRadius: {
         lg: "var(--radius)",

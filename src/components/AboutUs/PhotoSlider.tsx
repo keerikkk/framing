@@ -28,7 +28,10 @@ const PhotoSlider = () => {
         }}
       >
         {data.map((image) => (
-          <SwiperSlide key={image.src} className='w-36 md:w-48 lg:w-60'>
+          <SwiperSlide
+            key={image.src}
+            className='max-w-36 md:max-w-48 lg:max-w-60'
+          >
             <img
               src={image.src}
               alt={image.alt}

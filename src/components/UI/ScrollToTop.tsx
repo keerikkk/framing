@@ -1,6 +1,5 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
 import { ArrowUpIcon } from 'lucide-react';
 import { useScrollToTop } from '@/hooks/useScrollToTop';
 import ProgressCircle from './ProgressCircle';
