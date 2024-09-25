@@ -5,7 +5,7 @@ const HomeSocial = () => {
     <div className='absolute border-l-2 border-teal-bright top-1/2 -translate-y-1/2 right-0 h-3/4 w-7'>
       <div className='home-social'>
         {socialData.map((icon) => (
-          <Icon {...icon} className='text-teal-bright' />
+          <Icon key={icon.name} {...icon} className='text-teal-bright' />
         ))}
       </div>
     </div>

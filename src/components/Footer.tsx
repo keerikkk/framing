@@ -15,7 +15,7 @@ const Footer = () => {
 
         <div className='flex gap-6 md:gap-12'>
           {socialData.map((icon) => (
-            <Icon {...icon} className='text-white' />
+            <Icon key={icon.name} {...icon} className='text-white' />
           ))}
         </div>
       </div>
