@@ -52,8 +52,8 @@ const PriceCardListMobile = () => {
     <div className='md:hidden'>
       <Swiper pagination={true} modules={[Pagination]}>
         {priceCards.map((priceCard) => (
-          <SwiperSlide>
-            <PriceCard key={priceCard.title} {...priceCard} isSelected />
+          <SwiperSlide key={priceCard.title}>
+            <PriceCard {...priceCard} isSelected />
           </SwiperSlide>
         ))}
       </Swiper>
