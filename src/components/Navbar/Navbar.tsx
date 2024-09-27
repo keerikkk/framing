@@ -57,7 +57,7 @@ export function Navbar() {
 const data = {
   title: 'FRAMING',
   links: [
-    { title: 'HOME', to: '/' },
+    { title: 'HOME', to: '#home' },
     { title: 'ABOUT US', to: '#about-us' },
     { title: 'BENEFITS', to: '#benefits' },
     { title: 'PRICE', to: '#pricelist' },
