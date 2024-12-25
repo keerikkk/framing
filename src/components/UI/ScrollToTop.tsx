@@ -10,7 +10,7 @@ export default function ScrollToTopButton() {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-5 right-5 z-50 rounded-full bg-gray-800 p-3 text-white shadow-lg transition-all duration-300 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50 ${
+      className={`fixed bottom-5 right-5 z-50 rounded-full bg-gray-800 p-3 text-blue-dark shadow-lg transition-all duration-300 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-opacity-50 dark:text-white ${
         isVisible
           ? 'translate-y-0 opacity-100'
           : 'pointer-events-none translate-y-10 opacity-0'
@@ -18,7 +18,7 @@ export default function ScrollToTopButton() {
       aria-label='Scroll to top'
     >
       <div className='relative h-8 w-8'>
-        <ArrowUpIcon className='h-8 w-8' />
+        <ArrowUpIcon className='h-8 w-8 text-white' />
         <ProgressCircle progress={progress} />
       </div>
     </button>

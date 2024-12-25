@@ -40,7 +40,7 @@ const BenefitListMobile = () => {
               onClick={() => handleBenefitClick(benefit)}
               className={`flex flex-col items-center bg-transparent p-1 transition-colors ${
                 selectedBenefit === benefit
-                  ? 'border-b border-teal-500 shadow-md shadow-teal-bright'
+                  ? 'shadow:cream-bright border-b border-cream-dark shadow-md shadow-cream-bright dark:border-teal-500 dark:shadow-teal-bright'
                   : ''
               }`}
               aria-expanded={selectedBenefit === benefit}
@@ -48,7 +48,7 @@ const BenefitListMobile = () => {
             >
               <Icon
                 name={benefit.icon}
-                className={`${selectedBenefit === benefit && 'text-white'}`}
+                className={`${selectedBenefit === benefit && 'text-blue-dark dark:text-white'}`}
               />
             </button>
           );

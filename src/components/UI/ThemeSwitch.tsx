@@ -28,7 +28,7 @@ export default function ThemeSwitch() {
 
   return (
     <button
-      className='rounded-full border-gray-700 bg-transparent p-2 text-gray-300 hover:bg-gray-800 hover:text-white'
+      className='rounded-full border-gray-700 bg-transparent p-2 text-paragraph-dark hover:bg-blue-bright hover:text-blue-dark dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white'
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
       <SwitchIcon className='h-6 w-6' />

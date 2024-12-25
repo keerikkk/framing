@@ -27,7 +27,7 @@ export function PriceCard({
       >
         <PriceCardHeading title={title} {...price} />
         <PriceCardFieldList fields={fields} />
-        <Button className='border border-white bg-transparent hover:bg-white hover:text-gray-900'>
+        <Button className='border border-blue-dark bg-transparent hover:bg-blue-dark hover:text-gray-900 dark:border-white dark:hover:bg-white'>
           Photo Session Schedule
         </Button>
       </div>

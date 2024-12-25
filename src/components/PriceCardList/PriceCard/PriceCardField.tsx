@@ -5,7 +5,7 @@ interface PriceCardFieldProps {
 
 const PriceCardField = ({ label, value }: PriceCardFieldProps) => {
   return (
-    <li className='flex items-center justify-between text-white'>
+    <li className='flex items-center justify-between text-blue-dark dark:text-white'>
       <strong>{label}:</strong> {value}
     </li>
   );

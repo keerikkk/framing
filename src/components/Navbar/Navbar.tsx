@@ -15,11 +15,11 @@ export function Navbar() {
 
   return (
     <>
-      <header className='fixed left-0 right-0 top-0 z-50 bg-[#0F0F0F] bg-opacity-15 px-4 py-3 backdrop-blur-sm'>
+      <header className='fixed left-0 right-0 top-0 z-50 bg-blue-bright bg-opacity-30 px-4 py-3 backdrop-blur-sm dark:bg-black-light dark:bg-opacity-15'>
         <div className='container mx-auto flex items-center justify-between px-4 py-2 md:px-24 lg:px-32'>
           <Link
             href='/'
-            className='text-2xl font-bold tracking-widest text-gray-200'
+            className='text-2xl font-bold tracking-widest text-paragraph-light dark:text-gray-200'
           >
             {data.title}
           </Link>
@@ -33,7 +33,7 @@ export function Navbar() {
             <ThemeSwitch />
 
             <button
-              className='rounded-md border-gray-700 bg-transparent p-2 text-gray-300 hover:bg-gray-800 hover:text-white md:hidden'
+              className='rounded-md border-gray-700 bg-transparent p-2 text-paragraph-dark hover:bg-blue-bright hover:text-blue-dark dark:text-gray-300 dark:hover:bg-gray-800 dark:hover:text-white md:hidden'
               onClick={toggleMenu}
             >
               {isMenuOpen ? (
