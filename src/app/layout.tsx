@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 
+import { Navbar } from '@/components/Navbar/Navbar';
+import { Providers } from './providers';
+
 export const metadata: Metadata = {
   title: 'Framing',
   description:
@@ -12,9 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='en' suppressHydrationWarning>
       <body>
-        <div id='root'>{children}</div>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
