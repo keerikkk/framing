@@ -4,7 +4,7 @@ const BenefitsPageHeader = () => {
   return (
     <div className='flex flex-col justify-center text-start gap-8 lg:me-24 '>
       <Header title={data.title} />
-      <p className='text-basic'>{data.text}</p>
+      <p className='text-gray-400'>{data.text}</p>
     </div>
   );
 };

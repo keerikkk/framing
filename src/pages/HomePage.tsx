@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <section
       id='#home'
-      className='relative bg-teal-light flex flex-col min-h-screen before:absolute before:bg-benefits before:top-0 before:right-0 before:w-1/2 before:h-full before:content-[""]'
+      className='relative bg-teal-light flex flex-col min-h-screen before:absolute before:bg-black-light before:top-0 before:right-0 before:w-1/2 before:h-full before:content-[""]'
     >
       <div className='container mx-auto flex flex-col gap-20 py-48 px-2 relative flex-1'>
         <HomeHeader />

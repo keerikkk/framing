@@ -11,7 +11,7 @@ const AboutUsTitle = () => {
           className='w-[1.875rem] h-[10.625rem] absolute left-1/2 -translate-x-1/2'
         />
       </div>
-      <p className='max-w-md text-left text-basic'>{data.text}</p>
+      <p className='max-w-md text-left text-gray-400'>{data.text}</p>
     </div>
   );
 };
