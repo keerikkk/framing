@@ -1,6 +1,5 @@
 import { cn } from '@/lib/utils';
 import NavbarLink, { NavbarLinkProps } from './NavbarLink';
-import ThemeSwitch from '../UI/ThemeSwitch';
 
 interface NavbarLinkListProps {
   className?: string;
@@ -14,7 +13,6 @@ const NavbarLinkList = ({ className, links, onClick }: NavbarLinkListProps) => {
       {links.map((link) => (
         <NavbarLink key={link.title} {...link} onClick={onClick} />
       ))}
-      <ThemeSwitch />
     </nav>
   );
 };

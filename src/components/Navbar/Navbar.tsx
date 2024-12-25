@@ -6,6 +6,7 @@ import { Menu, X } from 'lucide-react';
 import Drawer from './Drawer';
 import NavbarLinkList from './NavbarLinkList';
 import Link from 'next/link';
+import ThemeSwitch from '../UI/ThemeSwitch';
 
 export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,22 +24,26 @@ export function Navbar() {
             {data.title}
           </Link>
 
-          <NavbarLinkList
-            className='hidden md:flex gap-4 lg:gap-8'
-            links={data.links}
-          />
+          <div className='flex items-center gap-4'>
+            <NavbarLinkList
+              className='hidden md:flex gap-4 lg:gap-8'
+              links={data.links}
+            />
 
-          <button
-            className='md:hidden bg-transparent border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white p-2 rounded-md'
-            onClick={toggleMenu}
-          >
-            {isMenuOpen ? (
-              <X className='h-6 w-6' />
-            ) : (
-              <Menu className='h-6 w-6' />
-            )}
-            <span className='sr-only'>Toggle menu</span>
-          </button>
+            <ThemeSwitch />
+
+            <button
+              className='md:hidden bg-transparent border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white p-2 rounded-md'
+              onClick={toggleMenu}
+            >
+              {isMenuOpen ? (
+                <X className='h-6 w-6' />
+              ) : (
+                <Menu className='h-6 w-6' />
+              )}
+              <span className='sr-only'>Toggle menu</span>
+            </button>
+          </div>
         </div>
       </header>
 
