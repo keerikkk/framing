@@ -5,9 +5,9 @@ const ContactPage = () => {
   return (
     <section
       id='#contact'
-      className='relative bg-black-light before:absolute before:bg-teal-dark before:bottom-0 before:left-0 before:w-full before:h-1/3 before:content-[""]'
+      className='relative bg-black-light before:absolute before:bottom-0 before:left-0 before:h-1/3 before:w-full before:bg-teal-dark before:content-[""]'
     >
-      <div className='container mx-auto flex flex-col gap-20 py-24 px-2 relative'>
+      <div className='container relative mx-auto flex flex-col gap-20 px-2 py-24'>
         <EmailForm />
         <Footer />
       </div>

@@ -8,7 +8,7 @@ const data = {
 const PriceListPage = () => {
   return (
     <section id='#pricelist' className='bg-pricelist bg-cover bg-center'>
-      <div className='container mx-auto flex flex-col gap-20 py-24 px-2'>
+      <div className='container mx-auto flex flex-col gap-20 px-2 py-24'>
         <Header title={data.title} />
         <PriceCardList />
       </div>

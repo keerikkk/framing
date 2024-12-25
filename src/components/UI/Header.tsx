@@ -9,7 +9,7 @@ const Header = ({ title, className }: HeaderProps) => {
   return (
     <h1
       className={cn(
-        'font-cormorant text-4xl sm:text-5xl lg:text-6xl text-white text-left',
+        'text-left font-cormorant text-4xl text-white sm:text-5xl lg:text-6xl',
         className,
       )}
     >

@@ -9,7 +9,7 @@ interface NavbarLinkListProps {
 
 const NavbarLinkList = ({ className, links, onClick }: NavbarLinkListProps) => {
   return (
-    <nav className={cn('font-medium flex items-center', className)}>
+    <nav className={cn('flex items-center font-medium', className)}>
       {links.map((link) => (
         <NavbarLink key={link.title} {...link} onClick={onClick} />
       ))}

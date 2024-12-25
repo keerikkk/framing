@@ -15,25 +15,25 @@ export function Navbar() {
 
   return (
     <>
-      <header className='fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-[#0F0F0F] bg-opacity-15 backdrop-blur-sm'>
-        <div className='container mx-auto flex items-center justify-between px-4 md:px-24 lg:px-32 py-2'>
+      <header className='fixed left-0 right-0 top-0 z-50 bg-[#0F0F0F] bg-opacity-15 px-4 py-3 backdrop-blur-sm'>
+        <div className='container mx-auto flex items-center justify-between px-4 py-2 md:px-24 lg:px-32'>
           <Link
             href='/'
-            className='font-bold text-2xl text-gray-200 tracking-widest'
+            className='text-2xl font-bold tracking-widest text-gray-200'
           >
             {data.title}
           </Link>
 
           <div className='flex items-center gap-4'>
             <NavbarLinkList
-              className='hidden md:flex gap-4 lg:gap-8'
+              className='hidden gap-4 md:flex lg:gap-8'
               links={data.links}
             />
 
             <ThemeSwitch />
 
             <button
-              className='md:hidden bg-transparent border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white p-2 rounded-md'
+              className='rounded-md border-gray-700 bg-transparent p-2 text-gray-300 hover:bg-gray-800 hover:text-white md:hidden'
               onClick={toggleMenu}
             >
               {isMenuOpen ? (
@@ -49,7 +49,7 @@ export function Navbar() {
 
       {isMenuOpen && (
         <div
-          className='fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden'
+          className='bg-black fixed inset-0 z-40 bg-opacity-50 md:hidden'
           onClick={toggleMenu}
         ></div>
       )}

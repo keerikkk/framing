@@ -7,7 +7,7 @@ export interface TestimonialProps {
 
 const Testimonial = ({ header, content }: TestimonialProps) => {
   return (
-    <article className='bg-teal-light max-w-sm'>
+    <article className='max-w-sm bg-teal-light'>
       <div className='px-8 py-6 text-white'>
         <TestimonialHeader {...header} />
         <hr className='my-6 opacity-40' />

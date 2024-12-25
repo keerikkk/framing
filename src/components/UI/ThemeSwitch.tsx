@@ -28,10 +28,10 @@ export default function ThemeSwitch() {
 
   return (
     <button
-      className='bg-transparent border-gray-700 text-gray-300 hover:bg-gray-800 hover:text-white rounded-full p-2'
+      className='rounded-full border-gray-700 bg-transparent p-2 text-gray-300 hover:bg-gray-800 hover:text-white'
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
-      <SwitchIcon className='w-6 h-6' />
+      <SwitchIcon className='h-6 w-6' />
     </button>
   );
 }

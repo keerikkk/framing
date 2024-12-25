@@ -2,7 +2,7 @@ import Header from '@/components/UI/Header';
 
 const BenefitsPageHeader = () => {
   return (
-    <div className='flex flex-col justify-center text-start gap-8 lg:me-24 '>
+    <div className='flex flex-col justify-center gap-8 text-start lg:me-24'>
       <Header title={data.title} />
       <p className='text-gray-400'>{data.text}</p>
     </div>

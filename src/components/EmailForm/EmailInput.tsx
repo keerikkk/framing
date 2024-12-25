@@ -15,8 +15,8 @@ export function EmailInput() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='w-3/4 md:w-2/3 mx-auto'>
-      <div className='flex items-center  overflow-auto bg-white'>
+    <form onSubmit={handleSubmit} className='mx-auto w-3/4 md:w-2/3'>
+      <div className='flex items-center overflow-auto bg-white'>
         <input
           type='email'
           value={email}
@@ -27,7 +27,7 @@ export function EmailInput() {
         />
         <Button
           type='submit'
-          className='bg-teal-light text-white px-6 py-3 m-1 font-medium hover:bg-teal-bright transition-colors duration-300'
+          className='m-1 bg-teal-light px-6 py-3 font-medium text-white transition-colors duration-300 hover:bg-teal-bright'
         >
           Submit
         </Button>
