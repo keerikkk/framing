@@ -17,8 +17,25 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        // light theme
+        cream: {
+          bright: "#EDF6FF",
+          light: "#F1F0E8",
+          dark: "#E5E1DA",
+        },
+        paragraph: {
+          bright: "#898D92",
+          light: "#233942",
+          dark: "#222222",
+        },
+        blue: {
+          bright: "#B3C8CF",
+          light: "#89A8B2",
+          dark: "#005691",
+        },
+        // dark theme
         black: {
-          bright: "0D0F11",
+          bright: "#0D0F11",
           light: "#0F0F0F",
           main: "#000",
         },
