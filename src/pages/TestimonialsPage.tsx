@@ -7,8 +7,8 @@ const data = {
 
 const TestimonialsPage = () => {
   return (
-    <section className='bg-teal-dark'>
-      <div className='container mx-auto flex flex-col gap-20 py-24 px-2'>
+    <section className='bg-cream-dark dark:bg-teal-dark'>
+      <div className='container mx-auto flex flex-col gap-20 px-2 py-24'>
         <Header title={data.title} />
         <TestimonialList />
       </div>

@@ -7,7 +7,7 @@ interface ProgressCircleProps {
 const ProgressCircle: React.FC<ProgressCircleProps> = ({ progress }) => {
   return (
     <svg
-      className='absolute top-0 left-0 -rotate-90 w-8 h-8'
+      className='absolute left-0 top-0 h-8 w-8 -rotate-90'
       viewBox='0 0 32 32'
     >
       <circle

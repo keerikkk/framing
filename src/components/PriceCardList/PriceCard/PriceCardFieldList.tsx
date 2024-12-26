@@ -6,7 +6,7 @@ interface PriceCardFieldListProps {
 
 const PriceCardFieldList = ({ fields }: PriceCardFieldListProps) => {
   return (
-    <ul className='py-6 flex flex-col gap-6'>
+    <ul className='flex flex-col gap-6 py-6'>
       {fields &&
         fields.map((field) => <PriceCardField key={field.label} {...field} />)}
     </ul>

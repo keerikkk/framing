@@ -2,7 +2,7 @@ import Experience, { ExperienceProps } from './Experience';
 
 const ExperienceList = () => {
   return (
-    <div className='flex gap-4 md:gap-16 xl:gap-24 mx-auto relative z-10 backdrop-blur-sm'>
+    <div className='relative z-10 mx-auto flex gap-4 backdrop-blur-sm md:gap-16 xl:gap-24'>
       {data.map((experience) => (
         <Experience key={experience.title} {...experience} />
       ))}

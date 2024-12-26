@@ -5,21 +5,25 @@ import Icon from './UI/Icon';
 const Footer = () => {
   return (
     <footer className='flex flex-col'>
-      <div className='container mx-auto flex items-center justify-between px-4 md:px-24 lg:px-32 pt-6'>
+      <div className='container mx-auto flex items-center justify-between px-4 pt-6 md:px-24 lg:px-32'>
         <Link
           href='/'
-          className='font-bold text-2xl text-gray-300 tracking-widest'
+          className='text-2xl font-bold tracking-widest text-paragraph-light dark:text-gray-300'
         >
           {data.title}
         </Link>
 
         <div className='flex gap-6 md:gap-12'>
           {socialData.map((icon) => (
-            <Icon key={icon.name} {...icon} className='text-white' />
+            <Icon
+              key={icon.name}
+              {...icon}
+              className='text-blue-dark dark:text-white'
+            />
           ))}
         </div>
       </div>
-      <p className='font-medium text-white absolute bottom-[2.5%] left-1/2 -translate-x-1/2'>
+      <p className='absolute bottom-[2.5%] left-1/2 -translate-x-1/2 font-medium text-blue-dark dark:text-white'>
         {data.copyright}
       </p>
     </footer>

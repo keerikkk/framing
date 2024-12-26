@@ -15,7 +15,7 @@ export default BenefitList;
 
 const BenefitListDesktop = () => {
   return (
-    <div className='sm:items-stretch hidden sm:contents'>
+    <div className='hidden sm:contents sm:items-stretch'>
       {data.map((benefit) => (
         <Benefit key={benefit.title} {...benefit} />
       ))}
@@ -31,16 +31,16 @@ const BenefitListMobile = () => {
   };
 
   return (
-    <div className='w-full mx-auto px-4 pt-8 block sm:hidden'>
-      <div className='flex justify-around mb-4'>
+    <div className='mx-auto block w-full px-4 pt-8 sm:hidden'>
+      <div className='mb-4 flex justify-around'>
         {data.map((benefit) => {
           return (
             <button
               key={benefit.title}
               onClick={() => handleBenefitClick(benefit)}
-              className={`flex flex-col items-center p-1  transition-colors bg-transparent ${
+              className={`flex flex-col items-center bg-transparent p-1 transition-colors ${
                 selectedBenefit === benefit
-                  ? 'border-b border-teal-500 shadow-md shadow-teal-bright'
+                  ? 'shadow:cream-bright border-b border-cream-dark shadow-md shadow-cream-bright dark:border-teal-500 dark:shadow-teal-bright'
                   : ''
               }`}
               aria-expanded={selectedBenefit === benefit}
@@ -48,7 +48,7 @@ const BenefitListMobile = () => {
             >
               <Icon
                 name={benefit.icon}
-                className={`${selectedBenefit === benefit && 'text-white'}`}
+                className={`${selectedBenefit === benefit && 'text-blue-dark dark:text-white'}`}
               />
             </button>
           );

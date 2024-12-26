@@ -19,17 +19,15 @@ export function PriceCard({
 }: PriceCardProps) {
   return (
     <div
-      className={`w-full max-w-xs mx-auto backdrop-blur-sm hover:cursor-pointer
-      ${isSelected ? 'scale-110' : 'scale-100'} max-md:scale-100`}
+      className={`mx-auto w-full max-w-xs backdrop-blur-sm hover:cursor-pointer ${isSelected ? 'scale-110' : 'scale-100'} max-md:scale-100`}
       onClick={onClick}
     >
       <div
-        className={`flex flex-col px-8 py-4 bg-gray-950 bg-opacity-15 max-md:bg-opacity-50 justify-between
-      ${isSelected ? 'border-[.375rem] border-cyan-950 border-opacity-50 shadow-cyan-950 shadow-md' : ''}`}
+        className={`flex flex-col justify-between bg-gray-950 bg-opacity-15 px-8 py-4 max-md:bg-opacity-50 ${isSelected ? 'border-[.375rem] border-cream-light border-opacity-50 shadow-md shadow-cream-light dark:border-cyan-950 dark:shadow-cyan-950' : ''}`}
       >
         <PriceCardHeading title={title} {...price} />
         <PriceCardFieldList fields={fields} />
-        <Button className='bg-transparent border border-white hover:bg-white hover:text-gray-900'>
+        <Button className='border border-blue-bright bg-transparent hover:bg-blue-light hover:text-black-bright dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-gray-900'>
           Photo Session Schedule
         </Button>
       </div>

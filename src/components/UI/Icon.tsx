@@ -8,10 +8,10 @@ interface IconProps {
 
 const Icon = ({ name, hoverName, className }: IconProps) => {
   return (
-    <div className={`inline-block ${hoverName ? 'relative group' : ''}`}>
+    <div className={`inline-block ${hoverName ? 'group relative' : ''}`}>
       <svg
         className={cn(
-          `text-basic h-7 w-7 block transition-opacity duration-300 ${hoverName ? 'opacity-100 group-hover:opacity-0' : ''}`,
+          `block h-7 w-7 text-paragraph-dark transition-opacity duration-300 dark:text-gray-400 ${hoverName ? 'opacity-100 group-hover:opacity-0' : ''}`,
           className,
         )}
       >
@@ -20,7 +20,7 @@ const Icon = ({ name, hoverName, className }: IconProps) => {
       {hoverName && (
         <svg
           className={cn(
-            'text-basic h-7 w-7 absolute top-0 left-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100',
+            'absolute left-0 top-0 h-7 w-7 text-paragraph-dark opacity-0 transition-opacity duration-300 group-hover:opacity-100 dark:text-gray-400',
             className,
           )}
         >

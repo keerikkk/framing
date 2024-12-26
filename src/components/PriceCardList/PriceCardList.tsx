@@ -22,7 +22,7 @@ const PriceCardListDesktop = () => {
 
   return (
     <div className='hidden md:block'>
-      <div className='flex justify-center items-stretch gap-6 mb-8'>
+      <div className='mb-8 flex items-stretch justify-center gap-6'>
         {priceCards.map((priceCard) => (
           <PriceCard
             key={priceCard.title}
@@ -32,11 +32,11 @@ const PriceCardListDesktop = () => {
           />
         ))}
       </div>
-      <div className='flex justify-center mt-12 space-x-2'>
+      <div className='mt-12 flex justify-center space-x-2'>
         {priceCardsTitles.map((title) => (
           <button
             key={title}
-            className={`w-3 h-3 rounded-full transition-colors duration-300 ${
+            className={`h-3 w-3 rounded-full transition-colors duration-300 ${
               selectedCard === title ? 'bg-cyan-900' : 'bg-gray-400'
             }`}
             onClick={() => setSelectedCard(title)}
