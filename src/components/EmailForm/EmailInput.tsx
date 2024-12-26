@@ -23,7 +23,7 @@ export function EmailInput() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder={data.placeholder}
           required
-          className='flex-grow px-4 py-2 text-gray-700 focus:outline-none'
+          className='flex-grow bg-white px-4 py-2 text-gray-700 focus:outline-none'
         />
         <Button
           type='submit'
