@@ -1,3 +1,5 @@
+'use client';
+
 import Testimonial, { TestimonialProps } from './Testimonial/Testimonial';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
