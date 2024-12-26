@@ -1,5 +1,7 @@
 'use client';
 
+import * as motion from 'motion/react-client';
+
 import { Button } from '@/components/UI/button';
 import { PriceCardItem } from '@/constants/PriceCards';
 import PriceCardHeading from './PriceCardHeading';
@@ -18,7 +20,9 @@ export function PriceCard({
   onClick,
 }: PriceCardProps) {
   return (
-    <div
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
       className={`mx-auto w-full max-w-xs backdrop-blur-sm hover:cursor-pointer ${isSelected ? 'scale-110' : 'scale-100'} max-md:scale-100`}
       onClick={onClick}
     >
@@ -31,6 +35,6 @@ export function PriceCard({
           Photo Session Schedule
         </Button>
       </div>
-    </div>
+    </motion.div>
   );
 }

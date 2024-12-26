@@ -1,3 +1,5 @@
+'use client';
+
 import Benefit, { BenefitProps } from '@/components/Benefit';
 import Icon from '@/components/UI/Icon';
 import { useState } from 'react';
