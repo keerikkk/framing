@@ -23,11 +23,11 @@ export function PriceCard({
       onClick={onClick}
     >
       <div
-        className={`flex flex-col justify-between bg-gray-950 bg-opacity-15 px-8 py-4 max-md:bg-opacity-50 ${isSelected ? 'border-[.375rem] border-cyan-950 border-opacity-50 shadow-md shadow-cyan-950' : ''}`}
+        className={`flex flex-col justify-between bg-gray-950 bg-opacity-15 px-8 py-4 max-md:bg-opacity-50 ${isSelected ? 'border-[.375rem] border-cream-light border-opacity-50 shadow-md shadow-cream-light dark:border-cyan-950 dark:shadow-cyan-950' : ''}`}
       >
         <PriceCardHeading title={title} {...price} />
         <PriceCardFieldList fields={fields} />
-        <Button className='border border-blue-dark bg-transparent hover:bg-blue-dark hover:text-gray-900 dark:border-white dark:hover:bg-white'>
+        <Button className='border border-blue-bright bg-transparent hover:bg-blue-light hover:text-black-bright dark:border-white dark:hover:bg-white dark:hover:text-gray-900'>
           Photo Session Schedule
         </Button>
       </div>
