@@ -1,4 +1,4 @@
-import BenefitsPageHeader from './BenefitsPageHeader';
+import BenefitsPageHeader from './BenefitsHeader/BenefitsPageHeader';
 import BenefitList from './BenefitList';
 
 const BenefitsPage = () => {
