@@ -1,6 +1,6 @@
 import ExperienceList from '@/components/AboutUs/ExperienceList';
 import PhotoSlider from '@/components/AboutUs/PhotoSlider';
-import AboutUsTitle from '@/components/AboutUs/AbouUsTitle';
+import AboutUsTitle from '@/components/AboutUs/AboutUsTitle/AbouUsTitle';
 
 export default function AboutUsPage() {
   return (

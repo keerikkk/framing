@@ -1,5 +1,6 @@
-import Header from '../UI/Header';
-import Icon from '../UI/Icon';
+import Header from '../../UI/Header';
+import Icon from '../../UI/Icon';
+import TitleText from './TitleText';
 
 const AboutUsTitle = () => {
   return (
@@ -11,9 +12,7 @@ const AboutUsTitle = () => {
           className='absolute left-1/2 h-[10.625rem] w-[1.875rem] -translate-x-1/2'
         />
       </div>
-      <p className='max-w-md text-left text-paragraph-dark dark:text-gray-400'>
-        {data.text}
-      </p>
+      <TitleText text={data.text} />
     </div>
   );
 };
