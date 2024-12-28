@@ -22,5 +22,5 @@ export default HomeDescription;
 
 const data = {
   content:
-    'Pellentesque mauris a lobortis in bibendum sed lobortis semper. Eget eu vel eu vitae.',
+    'Уявіть місце, де ви можете бути самими собою. Де ваші емоції, думки та бажання перетворюються на мистецтво.',
 };
