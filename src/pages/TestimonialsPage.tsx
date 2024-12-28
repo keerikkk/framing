@@ -2,7 +2,7 @@ import TestimonialList from '@/components/TestimonialList/TestimonialList';
 import Header from '@/components/UI/Header';
 
 const data = {
-  title: 'TESTIMONIALS',
+  title: 'ВІДГУКИ',
 };
 
 const TestimonialsPage = () => {
