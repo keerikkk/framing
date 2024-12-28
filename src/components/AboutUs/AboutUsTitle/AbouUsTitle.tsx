@@ -20,6 +20,6 @@ const AboutUsTitle = () => {
 export default AboutUsTitle;
 
 const data = {
-  title: 'ABOUT\nUS',
-  text: 'We are a team of creative, talented, and passionate architects who have been working together for over 20 years. Our vision is to create beautiful, sustainable, and inclusive buildings that will inspire and provoke thought.',
+  title: 'ПРО НАС',
+  text: 'Наша фотостудія — це простір, де кожен кадр перетворюється на витвір мистецтва. Тут ми створюємо атмосферу, яка надихає на творчість і дозволяє розкривати найкращі якості кожної миті.',
 };

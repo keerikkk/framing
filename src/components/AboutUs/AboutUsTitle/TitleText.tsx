@@ -13,7 +13,7 @@ const TitleText = ({ text }: TitleTextProps) => {
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ amount: 0.5, once: true }}
       transition={{ duration: 1 }}
-      className='max-w-md text-left text-paragraph-dark dark:text-gray-400'
+      className='max-w-md text-left text-lg text-paragraph-dark dark:text-gray-400'
     >
       {text}
     </motion.p>

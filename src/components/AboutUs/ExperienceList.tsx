@@ -16,22 +16,22 @@ const data: ExperienceProps[] = [
   {
     title: {
       value: 10,
-      text: ' Years',
+      text: ' Років',
     },
-    text: 'Experience',
+    text: 'Досвіду',
   },
   {
     title: {
       value: 450,
       text: '',
     },
-    text: 'Customers',
+    text: 'Клієнтів',
   },
   {
     title: {
       value: 15,
       text: 'K',
     },
-    text: 'Portfolio Photos',
+    text: 'Фотографій',
   },
 ];
