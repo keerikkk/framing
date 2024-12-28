@@ -8,8 +8,9 @@ const EmailForm = () => {
       </h2>
       <EmailInput />
       <p className='w-3/4 text-center font-light text-blue-dark dark:text-white lg:w-2/3'>
-        * By clicking “<strong>Submit</strong>” button, you agree to our Terms
-        and that you have read our <strong>Data Use Policy.</strong>
+        * Натискаючи кнопку “<strong>Надіслати</strong>”, ви погоджуєтеся з
+        нашими Умовами та підтверджуєте, що ознайомилися з нашою{' '}
+        <strong>Політикою використання даних.</strong>
       </p>
     </article>
   );
@@ -18,5 +19,5 @@ const EmailForm = () => {
 export default EmailForm;
 
 const data = {
-  title: 'Get more info other discount prices',
+  title: 'Отримайте більше інформації про інші знижки',
 };

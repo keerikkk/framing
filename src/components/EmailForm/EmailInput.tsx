@@ -29,7 +29,7 @@ export function EmailInput() {
           type='submit'
           className='m-1 bg-cream-light px-6 py-3 font-medium text-blue-dark transition-colors duration-300 hover:bg-cream-bright dark:bg-teal-light dark:text-white dark:hover:bg-teal-bright'
         >
-          Submit
+          Надіслати
         </Button>
       </div>
     </form>
@@ -37,5 +37,5 @@ export function EmailInput() {
 }
 
 const data = {
-  placeholder: 'Enter Your Email Adress',
+  placeholder: 'Введіть вашу електронну адресу',
 };
