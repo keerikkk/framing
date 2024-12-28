@@ -13,6 +13,6 @@ const BenefitsPageHeader = () => {
 export default BenefitsPageHeader;
 
 const data = {
-  title: 'WHY ME',
-  text: 'Tincidunt sagittis mollis nec suspendisse sed felis massa urna nec. Urna quisque blandit turpis ultrices arcu ut sed.',
+  title: 'ЧОМУ МИ',
+  text: 'Тут ви знайдете професіоналів, які перетворять ваші спогади на справжнє мистецтво. Ми гарантуємо якість, індивідуальний підхід та незабутні враження.',
 };

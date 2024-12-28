@@ -64,27 +64,27 @@ const BenefitListMobile = () => {
 const data: BenefitProps[] = [
   {
     icon: 'agency',
-    title: 'Agency',
-    text: 'Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et.',
+    title: 'Агенція',
+    text: 'Фотостудія, яка пропонує широкий спектр послуг для бізнесу та приватних осіб.',
   },
   {
     icon: 'idea',
-    title: 'Choose idea',
-    text: 'Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et.',
+    title: 'Вибір ідеї',
+    text: 'Ми допомагаємо вам вибрати ідею для зйомки, яка буде найбільш ефективною для досягнення ваших цілей.',
   },
   {
     icon: 'star',
-    title: 'Satisfaction',
-    text: 'Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et.',
+    title: 'Задоволення',
+    text: 'Ми гарантуємо, що ви будете задоволені результатом нашої роботи.',
   },
   {
     icon: 'quality',
-    title: 'Quality',
-    text: 'Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et.',
+    title: 'Якість',
+    text: 'Ми використовуємо лише найкраще обладнання та техніку, щоб забезпечити високу якість наших фотографій.',
   },
   {
     icon: 'creativity',
-    title: 'Creativity',
-    text: 'Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales phasellus et.',
+    title: 'Креативність',
+    text: 'Ми постійно у пошуках нових ідей та способів для створення унікальних та оригінальних фотографій.',
   },
 ];
