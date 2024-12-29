@@ -3,23 +3,26 @@
 import { useEffect, useState } from 'react';
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import PocketBase, { RecordModel } from 'pocketbase';
-
 import 'swiper/css';
-
-async function getPhotos() {
-  const db = new PocketBase('http://127.0.0.1:8090');
-  const data = await db.collection('pictures').getList();
-  return data.items;
-}
+import Image from 'next/image';
 
 const PhotoSlider = () => {
-  const [photos, setPhotos] = useState<RecordModel[]>([]);
+  const [photos, setPhotos] = useState<string[]>([]);
 
   useEffect(() => {
     async function fetchPhotos() {
-      const photosData = await getPhotos();
-      setPhotos(photosData);
+      try {
+        const photosData = [];
+        for (let i = 1; i <= 7; i++) {
+          const image = await import(
+            `../../../public/assets/photostudio/photostudio_${i}.png`
+          );
+          photosData.push(image.default);
+        }
+        setPhotos(photosData);
+      } catch (error) {
+        console.error('Error loading images:', error);
+      }
     }
 
     fetchPhotos();
@@ -49,13 +52,13 @@ const PhotoSlider = () => {
         }}
       >
         {photos &&
-          photos.map((photo) => (
+          photos.map((photo, index) => (
             <SwiperSlide
-              key={photo.id}
+              key={index}
               className='max-w-36 md:max-w-48 lg:max-w-60'
             >
-              <img
-                src={photo.image}
+              <Image
+                src={photo}
                 alt='Slider Image'
                 className='aspect-[293/358] object-cover'
               />
