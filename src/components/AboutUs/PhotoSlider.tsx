@@ -1,33 +1,21 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { Autoplay } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import Image from 'next/image';
 
+import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import img1 from '@/assets/photostudio/photostudio_1.png';
+import img2 from '@/assets/photostudio/photostudio_2.png';
+import img3 from '@/assets/photostudio/photostudio_3.png';
+import img4 from '@/assets/photostudio/photostudio_4.png';
+import img5 from '@/assets/photostudio/photostudio_5.png';
+import img6 from '@/assets/photostudio/photostudio_6.png';
+import img7 from '@/assets/photostudio/photostudio_7.png';
+
+const photos = [img1, img2, img3, img4, img5, img6, img7];
+
 const PhotoSlider = () => {
-  const [photos, setPhotos] = useState<string[]>([]);
-
-  useEffect(() => {
-    async function fetchPhotos() {
-      try {
-        const photosData = [];
-        for (let i = 1; i <= 7; i++) {
-          const image = await import(
-            `../../../public/assets/photostudio/photostudio_${i}.png`
-          );
-          photosData.push(image.default);
-        }
-        setPhotos(photosData);
-      } catch (error) {
-        console.error('Error loading images:', error);
-      }
-    }
-
-    fetchPhotos();
-  });
-
   return (
     <article className='pt-4 md:pt-14 lg:pt-20'>
       <Swiper
