@@ -1,15 +1,29 @@
 'use client';
 
 import { useState } from 'react';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+
 import { Button } from '../UI/button';
 
 export function EmailInput() {
   const [email, setEmail] = useState('');
+  const notify = () =>
+    toast.error('На жаль, ця функція поки не працює😥', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+      transition: Bounce,
+    });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Submitted email:', email);
+    notify();
     // Reset the input field after submission
     setEmail('');
   };
@@ -31,6 +45,20 @@ export function EmailInput() {
         >
           Надіслати
         </Button>
+
+        <ToastContainer
+          position='bottom-right'
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme='colored'
+          transition={Bounce}
+        />
       </div>
     </form>
   );
