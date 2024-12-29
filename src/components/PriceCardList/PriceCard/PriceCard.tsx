@@ -44,7 +44,7 @@ export function PriceCard({
             onClick={() => setIsModalOpen(true)}
             className='border border-blue-bright bg-transparent hover:bg-blue-light hover:text-black-bright dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-gray-900'
           >
-            Photo Session Schedule
+            {data.text}
           </Button>
         </div>
       </motion.div>
@@ -52,3 +52,7 @@ export function PriceCard({
     </>
   );
 }
+
+const data = {
+  text: 'Замовити зараз',
+};
