@@ -2,7 +2,7 @@ import { PriceCardList } from '@/components/PriceCardList/PriceCardList';
 import Header from '@/components/UI/Header';
 
 const data = {
-  title: 'PRICELIST',
+  title: 'ЦІНИ',
 };
 
 const PriceListPage = () => {

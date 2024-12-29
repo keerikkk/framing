@@ -3,10 +3,23 @@ import type { Metadata } from 'next';
 import { Navbar } from '@/components/Navbar/Navbar';
 import { Providers } from './providers';
 
+const baseUrl = process.env.NEXT_PUBLIC_URL || '';
+
 export const metadata: Metadata = {
-  title: 'Framing',
+  metadataBase: new URL(baseUrl),
+
+  title: 'Framing - Професійна фотостудія Ужгороду',
   description:
-    'Framing is a premier photo studio offering a wide range of photography services including portrait and commercial photography. Our team of experienced photographers is dedicated to capturing your special moments with creativity and professionalism.',
+    'Framing - це провідна фотостудія, яка спеціалізується на широкому спектрі фотографічних послуг, включаючи портретну та комерційну зйомку. Ми зосереджені на тому, щоб зберегти ваші особливі моменти з творчим підходом та високим рівнем професіоналізму.',
+  openGraph: {
+    title: 'Framing - Професійна фотостудія Ужгороду',
+    description:
+      'Професійна фотостудія Ужгороду. Портретна, комерційна зйомка. Ми зосереджені на збереженні ваших особливих моментів з високим рівнем професіоналізму.',
+    type: 'website',
+    locale: 'uk_UA',
+    url: baseUrl,
+    siteName: 'Framing',
+  },
 };
 
 export default function RootLayout({

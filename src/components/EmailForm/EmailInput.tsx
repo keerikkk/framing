@@ -1,15 +1,29 @@
 'use client';
 
 import { useState } from 'react';
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+
 import { Button } from '../UI/button';
 
 export function EmailInput() {
   const [email, setEmail] = useState('');
+  const notify = () =>
+    toast.error('На жаль, ця функція поки не працює😥', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+      transition: Bounce,
+    });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Submitted email:', email);
+    notify();
     // Reset the input field after submission
     setEmail('');
   };
@@ -29,13 +43,27 @@ export function EmailInput() {
           type='submit'
           className='m-1 bg-cream-light px-6 py-3 font-medium text-blue-dark transition-colors duration-300 hover:bg-cream-bright dark:bg-teal-light dark:text-white dark:hover:bg-teal-bright'
         >
-          Submit
+          Надіслати
         </Button>
+
+        <ToastContainer
+          position='bottom-right'
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick={false}
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme='colored'
+          transition={Bounce}
+        />
       </div>
     </form>
   );
 }
 
 const data = {
-  placeholder: 'Enter Your Email Adress',
+  placeholder: 'Введіть вашу електронну адресу',
 };

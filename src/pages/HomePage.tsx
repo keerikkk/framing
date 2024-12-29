@@ -2,6 +2,7 @@ import HomeSocial from '@/components/Home/HomeSocial';
 import HomeHeader from '@/components/Home/HomeHeader';
 import { Button } from '@/components/UI/button';
 import HomeDescription from '@/components/Home/HomeDescription';
+import HomeButton from '@/components/Home/HomeButton';
 
 const HomePage = () => {
   return (
@@ -13,7 +14,7 @@ const HomePage = () => {
         <HomeHeader />
         <HomeDescription />
         <HomeSocial />
-        <Button className='home-button'>Order Now</Button>
+        <HomeButton />
       </div>
     </section>
   );

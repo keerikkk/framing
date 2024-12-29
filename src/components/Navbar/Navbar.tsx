@@ -62,10 +62,10 @@ export function Navbar() {
 const data = {
   title: 'FRAMING',
   links: [
-    { title: 'HOME', to: '#home' },
-    { title: 'ABOUT US', to: '#about-us' },
-    { title: 'BENEFITS', to: '#benefits' },
-    { title: 'PRICE', to: '#pricelist' },
-    { title: 'CONTACT', to: '#contact' },
+    { title: 'ГОЛОВНА', to: '#home' },
+    { title: 'ПРО НАС', to: '#about-us' },
+    { title: 'ПЕРЕВАГИ', to: '#benefits' },
+    { title: 'ЦІНИ', to: '#pricelist' },
+    { title: 'КОНТАКТИ', to: '#contact' },
   ],
 };
