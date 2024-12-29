@@ -17,13 +17,50 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
+        // light theme
+        cream: {
+          bright: "#EDF6FF",
+          light: "#F1F0E8",
+          dark: "#E5E1DA",
+        },
+        paragraph: {
+          bright: "#898D92",
+          light: "#233942",
+          dark: "#222222",
+        },
+        blue: {
+          bright: "#B3C8CF",
+          light: "#89A8B2",
+          dark: "#005691",
+        },
+        // dark theme
+        black: {
+          bright: "#0D0F11",
+          light: "#0F0F0F",
+          main: "#000",
+        },
+        cyan: {
+          950: "#083344",
+        },
+        gray: {
+          200: "#e5e7eb",
+          300: "#d1d5db",
+
+          400: "#898D92", // basic
+
+          600: "#4b5563",
+          700: "#374151",
+          800: "#1f2937",
+          900: "#111827",
+          950: "#030712",
+        },
+        white: "#fff",
         teal: {
           bright: "#508195",
           light: "#233942",
           dark: "#141F24",
         },
-        benefits: "#0D0F11",
-        basic: "#898D92",
+
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -68,4 +105,5 @@ export default {
     },
   },
   plugins: [require("tailwindcss-animate")],
+  darkMode: "class",
 };

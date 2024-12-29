@@ -14,10 +14,10 @@ const TestimonialHeader = ({
       <img
         src={img}
         alt={author}
-        className='w-16 aspect-square object-cover rounded-full'
+        className='aspect-square w-16 rounded-full object-cover'
       />
       <div className='flex flex-col text-left'>
-        <h2 className='font-cormorant font-semibold text-[1.5rem] whitespace-nowrap overflow-hidden text-ellipsis'>
+        <h2 className='overflow-hidden text-ellipsis whitespace-nowrap font-cormorant text-[1.5rem] font-semibold'>
           {author}
         </h2>
         <p>{platform}</p>

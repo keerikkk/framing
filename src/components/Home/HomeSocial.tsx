@@ -1,11 +1,18 @@
+import Link from 'next/link';
 import Icon from '../UI/Icon';
 
 const HomeSocial = () => {
   return (
-    <div className='absolute border-l-2 border-teal-bright top-1/2 -translate-y-1/2 right-0 h-3/4 w-7'>
+    <div className='absolute right-0 top-1/2 h-3/4 w-7 -translate-y-1/2 border-l-2 border-cream-bright dark:border-teal-bright'>
       <div className='home-social'>
         {socialData.map((icon) => (
-          <Icon key={icon.name} {...icon} className='text-teal-bright' />
+          <Link href={icon.to} target='_blank'>
+            <Icon
+              key={icon.name}
+              {...icon}
+              className='text-cream-bright dark:text-teal-bright'
+            />
+          </Link>
         ))}
       </div>
     </div>
@@ -18,9 +25,11 @@ export const socialData = [
   {
     name: 'google',
     hoverName: 'google-colored',
+    to: 'mailto:framing.studio@gmail.com',
   },
   {
     name: 'instagram',
     hoverName: 'instagram-colored',
+    to: 'https://www.instagram.com/fraaming/',
   },
 ];

@@ -1,28 +1,21 @@
-import { useEffect, useState } from 'react';
+'use client';
+
+import Image from 'next/image';
+
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import PocketBase, { RecordModel } from 'pocketbase';
 
-import 'swiper/css';
+import img1 from '@/assets/photostudio/photostudio_1.png';
+import img2 from '@/assets/photostudio/photostudio_2.png';
+import img3 from '@/assets/photostudio/photostudio_3.png';
+import img4 from '@/assets/photostudio/photostudio_4.png';
+import img5 from '@/assets/photostudio/photostudio_5.png';
+import img6 from '@/assets/photostudio/photostudio_6.png';
+import img7 from '@/assets/photostudio/photostudio_7.png';
 
-async function getPhotos() {
-  const db = new PocketBase('http://127.0.0.1:8090');
-  const data = await db.collection('pictures').getList();
-  return data.items;
-}
+const photos = [img1, img2, img3, img4, img5, img6, img7];
 
 const PhotoSlider = () => {
-  const [photos, setPhotos] = useState<RecordModel[]>([]);
-
-  useEffect(() => {
-    async function fetchPhotos() {
-      const photosData = await getPhotos();
-      setPhotos(photosData);
-    }
-
-    fetchPhotos();
-  });
-
   return (
     <article className='pt-4 md:pt-14 lg:pt-20'>
       <Swiper
@@ -47,13 +40,13 @@ const PhotoSlider = () => {
         }}
       >
         {photos &&
-          photos.map((photo) => (
+          photos.map((photo, index) => (
             <SwiperSlide
-              key={photo.id}
+              key={index}
               className='max-w-36 md:max-w-48 lg:max-w-60'
             >
-              <img
-                src={photo.image}
+              <Image
+                src={photo}
                 alt='Slider Image'
                 className='aspect-[293/358] object-cover'
               />
