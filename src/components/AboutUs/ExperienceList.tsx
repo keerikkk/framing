@@ -15,10 +15,10 @@ export default ExperienceList;
 const data: ExperienceProps[] = [
   {
     title: {
-      value: 10,
-      text: ' Років',
+      value: 100,
+      text: '',
     },
-    text: 'Досвіду',
+    text: 'Успiшних\nпроектiв',
   },
   {
     title: {
