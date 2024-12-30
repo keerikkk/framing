@@ -31,12 +31,12 @@ export const priceCards: PriceCardItem[] = [
   },
   {
     title: priceCardsTitles[2],
-    price: { value: 4000, currency: ' грн' },
+    price: { value: 4500, currency: ' грн' },
     fields: [
+      { label: 'Тривалість', value: '2 години' },
       { label: 'Робота фотографа', value: '1 година' },
       { label: 'Фотографії', value: '80 шт' },
-      { label: 'Ретушування', value: '80 шт' },
-      { label: 'Завершення', value: '10 днів' },
+      { label: 'Завершення', value: '7 днів' },
     ],
   },
 ];
