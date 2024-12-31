@@ -98,13 +98,13 @@ const data = {
   contacts: [
     {
       icon: PhoneIcon,
-      href: 'tel:+1-123-456-7890',
-      text: '+1-123-456-7890',
+      href: 'tel:+380509958359',
+      text: '+38 (050) 995-83-59',
     },
     {
       icon: MailIcon,
-      href: 'mailto:example@example.com',
-      text: 'example@example.com',
+      href: 'mailto:framing.studio.uz@gmail.com',
+      text: 'framing.studio.uz@gmail.com',
     },
     {
       icon: InstagramIcon,
