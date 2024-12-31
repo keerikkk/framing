@@ -24,5 +24,5 @@ const HomeButton = () => {
 export default HomeButton;
 
 const data = {
-  text: 'Замовити зараз',
+  text: 'Забронювати',
 };

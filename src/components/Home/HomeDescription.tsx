@@ -10,7 +10,7 @@ const HomeDescription = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ amount: 0.5, once: true }}
         transition={{ duration: 2 }}
-        className='text-left text-lg text-paragraph-dark dark:text-gray-400 md:text-xl'
+        className='text-center text-lg text-paragraph-dark dark:text-gray-400 md:text-left md:text-xl'
       >
         {data.content}
       </motion.p>
@@ -22,5 +22,5 @@ export default HomeDescription;
 
 const data = {
   content:
-    'Уявіть місце, де ви можете бути самими собою. Де ваші емоції, думки та бажання перетворюються на мистецтво.',
+    'Елегантність у кожній деталі. Framing Studio - це місце, де мистецтво починається з точності.',
 };

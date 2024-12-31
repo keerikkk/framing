@@ -41,7 +41,7 @@ const Experience = ({ title, text }: ExperienceProps) => {
         <CountUp end={title.value} enableScrollSpy scrollSpyOnce />
         {title.text}
       </h3>
-      <p className='text-sm md:text-xl'>{text}</p>
+      <p className='whitespace-pre-line text-sm md:text-xl'>{text}</p>
     </motion.article>
   );
 };

@@ -36,7 +36,7 @@ export function PriceCard({
         onClick={onClick}
       >
         <div
-          className={`flex flex-col justify-between bg-gray-950 bg-opacity-15 px-8 py-4 max-md:bg-opacity-50 ${isSelected ? 'border-[.375rem] border-cream-light border-opacity-50 shadow-md shadow-cream-light dark:border-cyan-950 dark:shadow-cyan-950' : ''}`}
+          className={`flex min-h-96 flex-col justify-between bg-gray-950 bg-opacity-15 px-8 py-4 max-md:bg-opacity-50 ${isSelected ? 'border-[.375rem] border-cream-light border-opacity-50 shadow-md shadow-cream-light dark:border-cyan-950 dark:shadow-cyan-950' : ''}`}
         >
           <PriceCardHeading title={title} {...price} />
           <PriceCardFieldList fields={fields} />
