@@ -15,12 +15,8 @@ const Footer = () => {
 
         <div className='flex gap-6 md:gap-12'>
           {socialData.map((icon) => (
-            <Link href={icon.to} target='_blank'>
-              <Icon
-                key={icon.name}
-                {...icon}
-                className='text-blue-dark dark:text-white'
-              />
+            <Link key={icon.name} href={icon.to} target='_blank'>
+              <Icon {...icon} className='text-blue-dark dark:text-white' />
             </Link>
           ))}
         </div>
